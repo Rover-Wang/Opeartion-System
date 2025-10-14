@@ -59,17 +59,11 @@
 
   LPVOID lpEnvironment // 是否使用父进程环境变量
 
-  LPCTSTR lpCurrentDirectory //使用父进程目录作为当前目录，
+  LPCTSTR lpCurrentDirectory //使用父进程目录作为当前目录，可以自己设置目录
 
-  可以自己设置目录
+  LPSTARTUPINFO lpStartupInfo //STARTUPINFOW结构体详细信息（启动状态相关信息）
 
-  LPSTARTUPINFO lpStartupInfo //STARTUPINFOW结构体详细信
-
-  息（启动状态相关信息）
-
-  LPPROCESS\_INFORMATION //PROCESS\_INFORMATION结构体进程信
-
-  息
+  LPPROCESS\_INFORMATION //PROCESS\_INFORMATION结构体进程信息
 
   );
 
@@ -80,9 +74,10 @@
   例如，HANDLE t1 = CreateThread(NULL,0,Func,NULL,0,&ThreadID);
 
 6. 定义信号量Semaphore
+
   例如，HANDLE sema;
 
-7. 创建信号量：
+8. 创建信号量：
 
   CreateSemaphore(Attributes,InitialCount, MaxCount, SemaphoreID);
 
