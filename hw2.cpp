@@ -1,5 +1,4 @@
-﻿
-#include <stdlib.h>     //包含随机数产生函数
+﻿#include <stdlib.h>     //包含随机数产生函数
 #include <time.h>       //与时间有关的函数头文件
 #include <windows.h>    //针对Windows操作系统
 #include <stdio.h>
@@ -168,3 +167,4 @@ int main()
 
     return 0;
 }
+
